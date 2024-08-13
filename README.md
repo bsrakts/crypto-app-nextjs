@@ -22,8 +22,8 @@ Before running the application, ensure you have:
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/binance-next-application.git
-cd binance-next-application
+git clone https://github.com/yourusername/crypto-app-nextjs.git
+cd crypto-app-nextjs
 ```
 
 ### VPN Requirement
