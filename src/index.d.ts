@@ -3,7 +3,7 @@ export interface CoinData {
   price: string;
   name: string;
   symbol: string;
-  marketValue: string;
+  marketValue: number;
   change24h: string;
   priceChange?: number;
   priceHistory?: number[];

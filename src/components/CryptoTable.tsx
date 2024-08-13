@@ -25,19 +25,20 @@ const CryptoTable: React.FC = () => {
 
   return (
     <div>
-      <TextField
-        label="Filter Cryptos"
-        variant="outlined"
-        value={filter}
-        onChange={handleFilterChange}
-        style={{ marginBottom: "20px" }}
-      />
+      <div className="flex justify-end">
+        <TextField
+          label="Search.."
+          variant="outlined"
+          value={filter}
+          onChange={handleFilterChange}
+          className="mb-4 placeholder:!text-secondary w-1/6"
+        />
+      </div>
       <TableContainer component={Paper}>
         <Table aria-label="crypto table">
-          <TableHead className="">
-            <TableRow>
+          <TableHead>
+            <TableRow className="!bg-primary">
               <TableCell>Crypto</TableCell>
-              <TableCell></TableCell>
               <TableCell sortDirection={orderBy === "price" ? order : false}>
                 <TableSortLabel
                   active={orderBy === "price"}
@@ -59,7 +60,7 @@ const CryptoTable: React.FC = () => {
                   24h Change
                 </TableSortLabel>
               </TableCell>
-              <TableCell></TableCell>
+              <TableCell>Price Change</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

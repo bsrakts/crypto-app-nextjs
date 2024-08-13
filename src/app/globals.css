@@ -15,3 +15,10 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+@layer utilities {
+  thead > tr > th,
+  thead > tr > th > span {
+    @apply !text-secondary !font-semibold;
+  }
+}
